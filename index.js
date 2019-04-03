@@ -2,7 +2,7 @@ function fetchBooks() {
   //write fetch request to the Game of Thrones API
   fetch('https://www.anapioficeandfire.com/api/books')
   .then( (data) => {return data.json()} )
-  .then( () => {} )
+  .then( (books) => {console.log(books)} )
 }
 
 function loadJson () {
